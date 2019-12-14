@@ -1,9 +1,10 @@
-package src;
+package model;
 
 public enum ID {
 
 	Player(),
 	Enemy(),
-	Bullet();
+	Bullet(),
+	Door();
 	
 }

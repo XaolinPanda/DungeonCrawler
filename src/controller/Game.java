@@ -1,9 +1,19 @@
-package src;
+package controller;
 
 import java.awt.Canvas;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
+import java.util.Random;
+
+import model.Door;
+import model.Enemy;
+import model.Handler;
+import model.ID;
+import model.KeyInput;
+import model.MouseInput;
+import model.Player;
+import view.Window;
 
 public class Game extends Canvas implements Runnable{
 	
@@ -27,9 +37,7 @@ public class Game extends Canvas implements Runnable{
 		
 		
 	}
-	/**
-	 * 
-	 */
+	
 	
 	private void init() {
 		handler = new Handler();
@@ -40,6 +48,14 @@ public class Game extends Canvas implements Runnable{
 		
 		handler.addObject(new Player(100, 100, ID.Player, input));
 		mouseInput.findPlayer();
+		
+		handler.addObject(new Door(Game.WIDTH-20, (Game.HEIGHT/2)-(128/2), ID.Door));
+		
+		handler.addObject(new Enemy(600, 400, ID.Enemy, handler));
+		handler.addObject(new Enemy(150, 300, ID.Enemy, handler));
+		handler.addObject(new Enemy(487, 629, ID.Enemy, handler));
+		
+	
 	}
 	/**
 	 * 
@@ -118,6 +134,10 @@ public class Game extends Canvas implements Runnable{
 		//Core rendering
 		g.setColor(Color.black);
 		g.fillRect(0, 0, WIDTH, HEIGHT);
+		g.setColor(Color.white);
+		g.fillRect(10, 10, WIDTH-26, HEIGHT-54);
+		g.setColor(Color.black);
+		g.fillRect(20, 20, WIDTH-46, HEIGHT-74);
 		
 		
 		handler.render(g);

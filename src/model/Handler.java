@@ -1,4 +1,4 @@
-package src;
+package model;
 
 import java.awt.Graphics;
 import java.util.LinkedList;

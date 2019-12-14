@@ -1,9 +1,10 @@
 /**
  * 
  */
-package src;
+package model;
 
 import java.awt.Graphics;
+import java.awt.Rectangle;
 
 /**
  * @author XaolinPanda
@@ -67,5 +68,4 @@ public abstract class GameObject {
 	public void setId(ID id) {
 		this.id = id;
 	}
-
 }

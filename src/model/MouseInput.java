@@ -1,4 +1,4 @@
-package src;
+package model;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -32,7 +32,7 @@ public class MouseInput extends MouseAdapter {
 			GameObject tempBullet = handler.addObject(new Bullet(tempPlayer.x+16, tempPlayer.y+16, ID.Bullet));
 			
 			float angle = (float) Math.atan2(mouseY-tempPlayer.y-16, mouseX-tempPlayer.x-16);
-			int bulletVel = 20;
+			int bulletVel = 10;
 			
 			tempBullet.velX = (float) (bulletVel*Math.cos(angle));
 			tempBullet.velY = (float) (bulletVel*Math.sin(angle));

@@ -1,4 +1,4 @@
-package src;
+package model;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -19,7 +19,7 @@ public class Bullet extends GameObject{
 	@Override
 	public void render(Graphics g) {
 		g.setColor(Color.green);
-		g.fillRect((int)x,(int)y, 7, 4);
+		g.fillRect((int)x,(int)y, 4, 4);
 		
 	}
 

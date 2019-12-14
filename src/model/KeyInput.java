@@ -1,4 +1,4 @@
-package src;
+package model;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -30,10 +30,6 @@ public class KeyInput extends KeyAdapter {
 		if(key == KeyEvent.VK_W) { keys[2] = false; }
 		if(key == KeyEvent.VK_S) { keys[3] = false; }
 
-	}
-
-
-	public KeyInput() {
 	}
 
 }

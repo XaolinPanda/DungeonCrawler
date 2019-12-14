@@ -1,7 +1,9 @@
-package src;
+package model;
 
 import java.awt.Color;
 import java.awt.Graphics;
+
+import controller.Game;
 
 public class Player extends GameObject {
 
@@ -74,6 +76,8 @@ public class Player extends GameObject {
 		
 		return value;
 	}
+	
+	
 
 	@Override
 	public void render(Graphics g) {

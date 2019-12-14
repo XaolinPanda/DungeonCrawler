@@ -1,10 +1,12 @@
-package src;
+package view;
 
 import java.awt.Dimension;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+
+import controller.Game;
 
 public class Window {
 	
