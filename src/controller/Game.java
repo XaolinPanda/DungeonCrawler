@@ -125,7 +125,7 @@ public class Game extends Canvas implements Runnable{
 		//render the game
 		BufferStrategy bs = this.getBufferStrategy();
 		if(bs == null) {
-			this.createBufferStrategy(3);
+			this.createBufferStrategy(2);
 			return;
 		}
 		
@@ -134,10 +134,6 @@ public class Game extends Canvas implements Runnable{
 		//Core rendering
 		g.setColor(Color.black);
 		g.fillRect(0, 0, WIDTH, HEIGHT);
-		g.setColor(Color.white);
-		g.fillRect(10, 10, WIDTH-26, HEIGHT-54);
-		g.setColor(Color.black);
-		g.fillRect(20, 20, WIDTH-46, HEIGHT-74);
 		
 		
 		handler.render(g);

@@ -22,7 +22,4 @@ public class Bullet extends GameObject{
 		g.fillRect((int)x,(int)y, 4, 4);
 		
 	}
-
-	
-
 }
